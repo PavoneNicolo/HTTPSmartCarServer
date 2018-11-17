@@ -24,7 +24,7 @@ server.post('/data', function(req, res, next) { //fare post su numero di telaio 
 });
 
 server.get('/cars', function(req, res, next) {
-    res.send('opcroido');
+    res.send('test');
     return next();
 });
 
