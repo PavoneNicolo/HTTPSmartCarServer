@@ -24,4 +24,4 @@ server.post('/cars/:vinNumber/data', function (req, res, next) {
 
 server.listen(8080, function () {
     console.log('%s listening at localhost', server.name);
-});
+}
