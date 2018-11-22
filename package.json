@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "influx": "^5.0.7",
-    "restify": "^6.2.3"
+    "restify": "^6.2.3",
+    "restify-router": "^0.5.1"
   }
 }
