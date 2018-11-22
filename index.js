@@ -2,7 +2,7 @@ const restify = require('restify');
 const server = restify.createServer({name: "HTTP API"});
 const config = require('./config');
 const process = require('./data_process');
-const db = config.influxConfig();
+const db = config.influxConfig('localhost', 'cars_data', 8086);
 
 server.use(restify.plugins.bodyParser());
 
@@ -24,4 +24,4 @@ server.post('/cars/:vinNumber/data', function (req, res, next) {
 
 server.listen(8080, function () {
     console.log('%s listening at localhost', server.name);
-}
+});

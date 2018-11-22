@@ -1,10 +1,11 @@
 const influx = require('influx');
+
 module.exports = {
-    influxConfig: function () {
+    influxConfig: function (host, db, port) {
         return new influx.InfluxDB({
-            host: 'localhost',
-            database: 'cars_data',
-            port: 8086
+            host: host,
+            database: db,
+            port: port
         })
     }
 };
