@@ -1,5 +1,6 @@
 module.exports = {
-    getFields: function (data) {
+    //TODO get tags missing
+    _getFields: function (data) {
         let result = "";
         let fieldsLength = data.fields.length;
 
@@ -14,7 +15,7 @@ module.exports = {
         return JSON.parse('{' + result + '}');
     },
     writeInflux: function (db, data) {
-        let influxFields = this.getFields(data);
+        let influxFields = this._getFields(data);
         let measurement = data.vinNumber;
         let timestamp = data.Timestamp;
 

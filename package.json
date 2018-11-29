@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "HTTP_index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "influx": "^5.0.7",
+    "mqtt": "^2.18.8",
     "restify": "^6.2.3",
     "restify-router": "^0.5.1"
   }

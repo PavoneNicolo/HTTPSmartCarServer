@@ -1,6 +1,4 @@
 const restify = require('restify');
-const Router = require('restify-router').Router;
-const routerInstance = new Router();
 const server = restify.createServer({name: "HTTP API"});
 const httpRoute = require('./protocol/HTTP/index.js');
 
