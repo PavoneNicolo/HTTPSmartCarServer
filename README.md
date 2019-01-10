@@ -1,6 +1,6 @@
 # Smart Car Server
 
-Adv Networking Project where I implement multiple backend solution using different protocols (ex. HTTP, MQTT, ...)
+Adv Networking Project with multiple backend solution using different protocols (HTTP, MQTT)
 
 ## Getting Started
 
